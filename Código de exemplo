@@ -1,0 +1,14 @@
+class cachorro:
+    def __init__(self, nome, raca):
+        self.nome = nome
+        self.raca = raca
+        print(f"O cachorro {self.nome} da raça {self.raca} foi criado.")
+
+    def __del__(self):
+        print(f"O cachorro {self.nome} foi destruído.")
+
+cachorro1 = cachorro("Rex", "Labrador")
+cachorro2 = cachorro("Bolt", "Pastor Alemão")
+
+del cachorro1
+del cachorro2
